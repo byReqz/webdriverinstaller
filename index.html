@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Install your Drivers Online</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href='../external.html?link=http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<link href="css/portfolio.html" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="js/fliplightbox.min.js"></script>
+		<script type="text/javascript">
+			$('body').flipLightBox()
+		</script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				var filterList = {
+
+					init : function() {
+
+						// MixItUp plugin
+						// http://mixitup.io
+						$('#portfoliolist').mixitup({
+							targetSelector : '.portfolio',
+							filterSelector : '.filter',
+							effects : ['fade'],
+							easing : 'snap',
+							// call the hover effect
+							onMixEnd : filterList.hoverEffect()
+						});
+
+					},
+
+					hoverEffect : function() {
+
+						// Simple parallax effect
+						$('#portfoliolist .portfolio').hover(function() {
+							$(this).find('.label').stop().animate({
+								bottom : 0
+							}, 200, 'easeOutQuad');
+							$(this).find('img').stop().animate({
+								top : -40
+							}, 500, 'easeOutQuad');
+						}, function() {
+							$(this).find('.label').stop().animate({
+								bottom : -40
+							}, 200, 'easeInQuad');
+							$(this).find('img').stop().animate({
+								top : 0
+							}, 300, 'easeOutQuad');
+						});
+
+					}
+				};
+
+				// Run the show!
+				filterList.init();
+
+			});
+		</script>
+		 <!-- scroll -->
+		 <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		 <!-- //scroll -->
+ <!-- start header_style3 -->
+			<script type="text/javascript"  src="js/menu.js"></script>
+<!-- popup -->
+<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+				<script>
+					$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+					});
+				});
+				</script>
+<script type="text/javascript" src="js/jquery.lightbox.js"></script>
+<link rel="stylesheet" type="text/css" href="css/lightbox.css" media="screen" />
+  <script type="text/javascript">
+    $(function() {
+        $('#portfoliolist a').lightBox();
+    });
+   </script>
+</head>
+<body>
+	<div class="header">
+</div>
+
+
+
+
+			<div id="topnav"><!--start topnav --->
+
+
+
+
+	        <nav>
+	        		 <ul>
+						 <li class="active"><a href="#home" class="scroll">Home</a></li>
+					     <li><a href="#download" class="scroll">Download</a></li>
+						<div class="clear"> </div>
+					</ul>
+	        </nav>
+	        <a href="#" id="navbtn">Nav Menu</a>
+	        <div class="clear"></div>
+	      </div>					
+	</div>
+</div>
+	<!---------banner------------->
+	<div id="home" class="banner">
+		<div class="wrap">
+			<h2>Download your Drivers online!</h2>
+			<p>Free and no Risk</p>
+		</div>
+	</div>	
+	<div class="download" id="download">
+	<div class="wrap">
+		<div class="team-grids">
+			<h2>Download</h2>
+				<p>
+Please select your Manufacturer. Dont wanna destroy your PC. </p>
+						<div class="images_1_of_4">
+					 		<a href="#" class="radius"><img src="images/pic1.jpg"></a>	
+					 		<h3>AMD</h3>
+					 		<p>Drivers for Amd Devices<br />
+							512mb</p>
+					 		<a href="drivers/amd/index.html"><img src="images/msg.png"></a>				    
+						</div>
+						<div class="images_1_of_4">
+							 <a href="#" class="radius"><img src="images/pic2.jpg"></a>	
+                                                        <h3>Nvidia</h3>
+                                                        <p>Drivers for Nvidia <br />
+                                                        670mb</p>
+							 <a href="drivers/nvidia/index.html"><img src="images/msg.png"></a>					   
+						</div>
+						<div class="images_1_of_4">
+							 <a href="#" class="radius"><img src="images/pic3.jpg"></a>	
+							<h3>Zotac</h3>
+                                                        <p>Drivers for Zotac <br />
+                                                        265mb</p>
+							<a href="drivers/zotac/index.html"><img src="images/msg.png"></a>							   
+						</div>
+						<div class="images_1_of_4">
+							 <a href="#" class="radius"><img src="images/pic4.jpg"></a>	
+                                                       <h3>MSI</h3>
+                                                        <p>Drivers for MSI <br />
+                                                        800mb</p>
+							 <a href="drivers/msi/index.html"><img src="images/msg.png"></a>					   
+						</div>
+						<div class="clear"> </div>
+		 </div>
+</div>
+</div>
+
+        <!---------about------------->
+        <div class="about" id="about">
+                <div class="wrap">
+                        <h3>About Us</h3>
+	<p>Im creating Webinstallers to deliver you the newest Drivers directly without download! (all is Fun and Parody, no Virus or Phishing) </p>
